@@ -23,9 +23,6 @@ def get_distances(pairs: list[tuple[ColoredPoint, ColoredPoint]]):
     all_distances = np.array([euclid_distance(p) for p in pairs])
     statistics = dict(
         mean=float(all_distances.mean()),
-        std=float(all_distances.std()),
-        min=float(all_distances.min()),
-        max=float(all_distances.max()),
         sum=float(all_distances.sum()),
     )
     return all_distances, statistics
