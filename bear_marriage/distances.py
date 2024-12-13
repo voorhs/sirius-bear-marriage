@@ -25,7 +25,7 @@ def get_distances(pairs: list[tuple[ColoredPoint, ColoredPoint]]):
         mean=float(all_distances.mean()),
         std=float(all_distances.std()),
         min=float(all_distances.min()),
-        max=float(all_distances.max()) + 1,
+        max=float(all_distances.max()),
         sum=float(all_distances.sum()),
         median=float(all_distances.median()),
     )
